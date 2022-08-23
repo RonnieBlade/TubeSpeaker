@@ -1,0 +1,54 @@
+html, body {
+    margin: 0;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.my-button { 
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 4px;
+    margin-left: 4px;
+    padding-top: 10;
+    padding-right: 16;
+    padding-bottom: 10;
+    padding-left: 16;
+    transition: opacity 0.15s;
+    height: 36.5px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.centered{
+    text-align: center;
+}
+
+.play-btn {
+    background-color: #5f9341;
+}
+
+.stop-btn {
+    background-color: rgb(200, 17, 17);
+}
+
+.play-button:hover {
+    opacity: 0.8;
+}
+
+.play-button:active {
+    opacity: 0.5;
+}
+
+.btn-container {
+    height: 100%;
+    position: relative;
+
+    min-width: 70px;
+    display: flex;
+    justify-content: center;
+}

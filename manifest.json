@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "version": "1.1",
+    "name": "TubeSpeaker",
+    "background": {
+        "service_worker":"background.js"
+      },
+    "permissions": [
+        "tabs",
+        "scripting"
+    ],
+    "host_permissions": ["https://*/*"],
+
+    "action": {
+        "default_title": "TubeSpeaker",
+        "default_popup": "index.html",
+        "default_icon": "icon.png"
+    },
+
+    "content_scripts": 
+    [
+        {
+        "matches": ["*://*.youtube.com/*"],
+        "css": ["myStyles.css", "notifications.css"],
+        "js": ["speakScripts.js", "playerScripts.js", "contetnt.js", "notifications.js", "jquery.js"]
+        }
+    ]
+    
+}
